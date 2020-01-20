@@ -1,0 +1,207 @@
+---
+title: "BDSkyline"
+author: "Angela"
+date: "20/12/2019"
+output: html_document
+---
+
+Code club 2020-01-22
+
+Purpose of this script:
+-read in multiple output log files from birth death skyline runs from BEAST
+-visualize the reproduction number over time
+
+Challenge:
+-writing and executing functions in which global objects are defined
+
+Source of example logfiles and additional info:
+https://taming-the-beast.org/tutorials/Skyline-plots/
+
+Louis de Plessis' bdskytools package:
+https://github.com/laduplessis/bdskytools
+
+```{r Run this chunk if you need to install these libraries}
+install.packages("devtools")
+library(devtools)
+devtools::install_github("laduplessis/bdskytools")
+install.packages("ggplot2")
+install.packages("dplyr")
+install.packages("tidyr")
+install.packages("wesanderson") #very important
+install.packages("RColorBrewer")
+```
+
+```{r setup libraries}
+library(bdskytools)
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+library(wesanderson)
+library(RColorBrewer)
+```
+
+```{r Read in a single logfile and plot Ro over time}
+#Read in the logfile
+lf<-readLogfile("BEAST/hcv_bdsky.log", burnin=0.1)
+
+#extract the HPDs 
+Re_sky <- getSkylineSubset(lf, "reproductiveNumber")
+Re_hpd <- getMatrixHPD(Re_sky)
+delta_hpd <- getHPD(lf$becomeUninfectiousRate_BDSKY_Contemp) #use getHPD for one dimensional parameter
+s_hpd <- getHPD(lf$rho_BDSKY_Contemp) #use getHPD for one dimensional parameter
+
+#Plot the stepwise Re
+plotSkyline(1:10, Re_hpd, type='step', ylab="R") #note that 1:10 reflects the dimensions of Ro
+
+#In order to plot the smooth skyline we have to marginalise our Re estimates 
+#on a regular timegrid and calculate the HPD at each gridpoint. 
+#It is usually a good idea to use a grid with more cells than the dimension of Re
+#To do this we first calculate the marginal posterior at every time of interest 
+#using the function gridSkyline and then calculate the HPD for each of the finer time intervals.
+#The times to grid the skyline on (timegrid), refers to years in the past.
+timegrid <- seq(0,400,length.out=101)
+times <- 1993-timegrid #sequences were sampled in 1993
+Re_gridded <- gridSkyline(Re_sky, lf$origin, timegrid)
+Re_gridded_hpd <- getMatrixHPD(Re_gridded)
+
+#setup colors
+fav<-wes_palette("Zissou1")
+
+#plot a smooth skyline
+png("OutputFigures/Re_plot.png", width = 5, height = 5, units = "in", res=1000)
+plotSkylinePretty(times, Re_gridded_hpd, type='smooth', axispadding=0.0, 
+                  col=fav[1], fill=fav[2], 
+                  xlab="Time", ylab=expression("R"[e]), side=2, yline=2.5, xline=2, xgrid=TRUE, 
+                  ygrid=TRUE, gridcol=pal.dark(cgray), ylims=c(0,3.5))
+while (!is.null(dev.list()))  dev.off()
+```
+
+This is all fine and well for 1 log file, but what about when you want to look at lots of log files, save many objects from those log files, and then compare across runs?
+
+```{r Read in multiple logfiles and plot Ro over time for all - the inefficient way}
+####LOGFILE1####
+
+#Read in the logfile
+lf1<-readLogfile("BEAST/hcv1.log", burnin=0.1)
+
+#extract the HPD for reproduction number
+Re_sky1 <- getSkylineSubset(lf1, "reproductiveNumber")
+Re_hpd1 <- getMatrixHPD(Re_sky1)
+
+#setup for plot
+timegrid1 <- seq(0,400,length.out=101)
+times1 <- 1993-timegrid1 #sequences were sampled in 1993
+Re_gridded1 <- gridSkyline(Re_sky1, lf1$origin, timegrid1)
+Re_gridded_hpd1 <- getMatrixHPD(Re_gridded1)
+
+#plot a smooth skyline
+png("OutputFigures/Re_plot1.png", width = 5, height = 5, units = "in", res=1000)
+plotSkylinePretty(times1, Re_gridded_hpd1, type='smooth', axispadding=0.0, 
+                  col=fav[1], fill=fav[2], 
+                  xlab="Time", ylab=expression("R"[e]), side=2, yline=2.5, xline=2, xgrid=TRUE, 
+                  ygrid=TRUE, gridcol=pal.dark(cgray), ylims=c(0,3.5))
+while (!is.null(dev.list()))  dev.off()
+
+####LOGFILE2####
+
+#Read in the logfile
+lf2<-readLogfile("BEAST/hcv2.log", burnin=0.1)
+
+#extract the HPD for reproduction number
+Re_sky2 <- getSkylineSubset(lf2, "reproductiveNumber")
+Re_hpd2 <- getMatrixHPD(Re_sky2)
+
+#setup for plot
+timegrid2 <- seq(0,400,length.out=101)
+times2 <- 1993-timegrid2 #sequences were sampled in 1993
+Re_gridded2 <- gridSkyline(Re_sky2, lf2$origin, timegrid2)
+Re_gridded_hpd2 <- getMatrixHPD(Re_gridded2)
+
+#plot a smooth skyline
+png("OutputFigures/Re_plot2.png", width = 5, height = 5, units = "in", res=1000)
+plotSkylinePretty(times2, Re_gridded_hpd2, type='smooth', axispadding=0.0, 
+                  col=fav[1], fill=fav[2], 
+                  xlab="Time", ylab=expression("R"[e]), side=2, yline=2.5, xline=2, xgrid=TRUE, 
+                  ygrid=TRUE, gridcol=pal.dark(cgray), ylims=c(0,3.5))
+while (!is.null(dev.list()))  dev.off()
+
+#### Try to plot them together ####
+fav2 <- adjustcolor(fav, alpha.f = 0.3)
+
+png("OutputFigures/Re_plot3.png", width = 5, height = 5, units = "in", res=1000)
+par(mar=c(5,4,4,4)+0.1)
+plotSkylinePretty(times1, Re_gridded_hpd1, type='smooth', axispadding=0.0, 
+                  col=fav[1], fill=fav2[2], alpha=0.5,
+                  xlab="Time", ylab=expression("R"[e]), side=2, yline=2.5, xline=2, xgrid=TRUE, 
+                  ygrid=TRUE, gridcol=pal.dark(cgray), ylims=c(0,4),xaxis=FALSE)
+
+plotSkylinePretty(times1, Re_gridded_hpd2, type='smooth', axispadding=0.0, 
+                  col=fav[5], fill=fav2[5], alpha=0.5,
+                  xlab="Time", ylab=expression("R"[e]), side=2, yline=2.5, xline=2, xgrid=TRUE, 
+                  ygrid=TRUE, gridcol=pal.dark(cgray), ylims=c(0,4), new=TRUE, add=TRUE)
+while (!is.null(dev.list()))  dev.off()
+
+```
+
+Issue: very annoying/ugly script to have to change object names for each log file...
+
+Challenge: can you write a function that can be applied to a logfile to define all these objects (with unique names dependent on the input to the function) to feed into the figure?
+
+```{r CHALLENGE 1: INSERT NEW SCRIPT HERE}
+
+```
+
+If you have time...apply same strategy to improve code below
+
+```{r plot HPD sampling proportion, become uninfectious, origin}
+####Extract mean estimate (point) with 95% HPD interval for parameters####
+#Calculate 95%HPD for nexus 1
+delta_hpd1<-getHPD(lf1$becomeUninfectiousRate_BDSKY_Contemp) 
+s_hpd1<-getHPD(lf1$rho_BDSKY_Contemp) 
+or_hpd1<-getHPD(lf1$origin_BDSKY_Contemp) 
+HPDs_1<-data.frame(delta_hpd1, s_hpd1, or_hpd1)
+colnames(HPDs_1)<-c("BecomeUninfectiousRate","SamplingProportion","Origin")
+rownames(HPDs_1)<-c("LowerHPD","Mean","UpperHPD")
+HPDs_1$Estimate<-rownames(HPDs_1)
+HPDs_1$Cluster<-as.factor("1")
+HPDs_1<-HPDs_1%>%mutate(PeriodOfInfectiousness=1/BecomeUninfectiousRate) #change to its more interpretable reciprocal
+HPDs_1<-HPDs_1%>%mutate(OriginYear=2018-Origin) #change year instead of age
+HPDs_1<-HPDs_1 %>% select(-c("Origin","BecomeUninfectiousRate"))
+HPDs_1.2<-HPDs_1 %>% tidyr::gather("Parameter","Value","PeriodOfInfectiousness","SamplingProportion","OriginYear")
+HPDs_1.3<-HPDs_1.2 %>% tidyr::spread("Estimate","Value")
+
+#Calculate 95%HPD for nexus 2
+delta_hpd2<-getHPD(lf2$becomeUninfectiousRate_BDSKY_Contemp) 
+s_hpd2<-getHPD(lf2$rho_BDSKY_Contemp) 
+or_hpd2<-getHPD(lf2$origin_BDSKY_Contemp) 
+HPDs_2<-data.frame(delta_hpd2, s_hpd2, or_hpd2)
+colnames(HPDs_2)<-c("BecomeUninfectiousRate","SamplingProportion","Origin")
+rownames(HPDs_2)<-c("LowerHPD","Mean","UpperHPD")
+HPDs_2$Estimate<-rownames(HPDs_2)
+HPDs_2$Cluster<-as.factor("2")
+HPDs_2<-HPDs_2%>%mutate(PeriodOfInfectiousness=1/BecomeUninfectiousRate) #change to its more interpretable reciprocal
+HPDs_2<-HPDs_2%>%mutate(OriginYear=2018-Origin) #change year instead of age
+HPDs_2<-HPDs_2 %>% select(-c("Origin","BecomeUninfectiousRate"))
+HPDs_2.2<-HPDs_2 %>% tidyr::gather("Parameter","Value","PeriodOfInfectiousness","SamplingProportion","OriginYear")
+HPDs_2.3<-HPDs_2.2 %>% tidyr::spread("Estimate","Value")
+
+#and merge into a single data frame
+allHPDs<-rbind(HPDs_1.3, HPDs_2.3)
+
+#Okay, now plot as faceted ggplot for each of the Parameters with point for mean and bar for interval
+colz<-c(fav[1],fav[5])
+ggplot(allHPDs)+
+  geom_pointrange(aes(x=Cluster,y=Mean, ymin=LowerHPD, ymax=UpperHPD, color=Cluster))+
+  scale_color_manual(values=colz)+
+  facet_wrap(. ~Parameter,scales = "free")+
+  labs(x=NULL, y="Mean (95% HPD)")+
+  theme_bw()+
+  theme()
+
+ggsave("OutputFigures/Facetted_estimates.png", width = 7, height = 5)
+```
+
+```{r CHALLENGE 2: Insert improved code here!}
+
+```
+

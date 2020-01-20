@@ -1,0 +1,37 @@
+<itsabeastystatewerein version='2.0' sample='10000000'>
+<statenode id='Tree.t:hcv2'>(((((((((0:56.84337628498704,2:56.84337628498704)42:1.5158845455763696,14:58.35926083056341)34:4.237459135654852,((1:50.744258259649406,(3:0.36177318467532693,12:0.36177318467532693)35:50.38248507497408)50:4.786199521507356,9:55.53045778115676)54:7.066262185061497)46:4.119690387573726,(((4:35.16005250014836,6:35.16005250014836)48:21.534496518843973,(7:50.31465290755888,10:50.31465290755888)49:6.379896111433453)47:6.493687718475734,5:63.18823673746807)55:3.528173616323919)52:0.25344958469742096,(11:27.562492977224345,13:27.562492977224345)37:39.40736696126506)41:17.532067739101592,15:84.501927677591)30:10.374009719997318,8:94.87593739758832)45:231.0620337416242,(((19:7.716416452115381,20:7.716416452115381)39:58.869890579403446,21:66.58630703151883)38:16.24901916253188,24:82.83532619405071)40:243.10264494516179)33:37.97730073739598,((((16:53.56957204012499,25:53.56957204012499)53:3.0213292856382097,((26:43.16920818384941,28:43.16920818384941)51:3.623242626470301,27:46.792450810319714)44:9.798450515443484)31:291.405817435706,((22:1.7225109973733606,23:1.7225109973733606)36:84.61433839246583,29:86.33684938983919)43:261.65986937163)57:2.466289113072321,(17:41.594117094396054,18:41.594117094396054)32:308.8688907801455)56:13.452264002066954)58:0.0</statenode>
+<statenode id='gammaShape.s:hcv2'>gammaShape.s:hcv2[1 1] (0.001,1000.0): 0.35702708508442604 </statenode>
+<statenode id='freqParameter.s:hcv2'>freqParameter.s:hcv2[4 1] (0.0,1.0): 0.18482746829268848 0.33244243569087434 0.23305138128930453 0.24967871472713254 </statenode>
+<statenode id='rateAC.s:hcv2'>rateAC.s:hcv2[1 1] (0.0,Infinity): 0.08670130633912954 </statenode>
+<statenode id='rateAG.s:hcv2'>rateAG.s:hcv2[1 1] (0.0,Infinity): 0.8356016507524381 </statenode>
+<statenode id='rateAT.s:hcv2'>rateAT.s:hcv2[1 1] (0.0,Infinity): 0.16945538143366462 </statenode>
+<statenode id='rateCG.s:hcv2'>rateCG.s:hcv2[1 1] (0.0,Infinity): 0.07294668751187097 </statenode>
+<statenode id='rateGT.s:hcv2'>rateGT.s:hcv2[1 1] (0.0,Infinity): 0.12217276714573011 </statenode>
+<statenode id='origin_BDSKY_Contemp.t:hcv2'>origin_BDSKY_Contemp.t:hcv2[1 1] (0.0,Infinity): 438.8950363405299 </statenode>
+<statenode id='rho_BDSKY_Contemp.t:hcv2'>rho_BDSKY_Contemp.t:hcv2[1 1] (0.0,1.0): 3.106315152212153E-4 </statenode>
+<statenode id='becomeUninfectiousRate_BDSKY_Contemp.t:hcv2'>becomeUninfectiousRate_BDSKY_Contemp.t:hcv2[1 1] (0.0,Infinity): 0.26334673607988757 </statenode>
+<statenode id='reproductiveNumber_BDSKY_Contemp.t:hcv2'>reproductiveNumber_BDSKY_Contemp.t:hcv2[10 1] (0.0,Infinity): 0.8170709826907713 0.6187120934135996 1.5945452008475953 2.1724248591989666 0.2906629196866961 0.6043813869132554 0.9363163954787254 0.5359451824544018 1.2069003663226747 1.4634471918345775 </statenode>
+</itsabeastystatewerein>
+<!--
+{"operators":[
+{"id":"gammaShapeScaler.s:hcv2","p":0.48822946411892165,"accept":2177,"reject":9046,"acceptFC":2170,"rejectFC":9030,"rejectIv":0,"rejectOp":0},
+{"id":"FrequenciesExchanger.s:hcv2","p":0.06509579213479491,"accept":3248,"reject":8170,"acceptFC":3240,"rejectFC":8165,"rejectIv":0,"rejectOp":0},
+{"id":"RateACScaler.s:hcv2","p":0.3382832835054252,"accept":3429,"reject":7701,"acceptFC":3423,"rejectFC":7686,"rejectIv":0,"rejectOp":0},
+{"id":"RateAGScaler.s:hcv2","p":0.458643391822092,"accept":2263,"reject":8994,"acceptFC":2256,"rejectFC":8978,"rejectIv":0,"rejectOp":0},
+{"id":"RateATScaler.s:hcv2","p":0.3109097785390527,"accept":2620,"reject":8732,"acceptFC":2608,"rejectFC":8719,"rejectIv":0,"rejectOp":0},
+{"id":"RateCGScaler.s:hcv2","p":0.3199390738988075,"accept":3288,"reject":8011,"acceptFC":3284,"rejectFC":7993,"rejectIv":0,"rejectOp":0},
+{"id":"RateGTScaler.s:hcv2","p":0.3392211681545517,"accept":2844,"reject":8531,"acceptFC":2829,"rejectFC":8517,"rejectIv":0,"rejectOp":0},
+{"id":"BDSKY_ContempTreeScaler.t:hcv2","p":0.8975541580165813,"accept":43646,"reject":294822,"acceptFC":43602,"rejectFC":294059,"rejectIv":58939,"rejectOp":0},
+{"id":"BDSKY_ContempTreeRootScaler.t:hcv2","p":0.7189103460932645,"accept":22018,"reject":315910,"acceptFC":21984,"rejectFC":315179,"rejectIv":242132,"rejectOp":127852},
+{"id":"BDSKY_ContempUniformOperator.t:hcv2","p":"NaN","accept":1163286,"reject":2217394,"acceptFC":1160546,"rejectFC":2212455,"rejectIv":0,"rejectOp":0},
+{"id":"BDSKY_ContempSubtreeSlide.t:hcv2","p":26.074095216961833,"accept":381882,"reject":1309951,"acceptFC":378247,"rejectFC":1309571,"rejectIv":340725,"rejectOp":314532},
+{"id":"BDSKY_ContempNarrow.t:hcv2","p":"NaN","accept":648809,"reject":1044107,"acceptFC":647597,"rejectFC":1041367,"rejectIv":0,"rejectOp":0},
+{"id":"BDSKY_ContempWide.t:hcv2","p":"NaN","accept":5895,"reject":333236,"acceptFC":5880,"rejectFC":332448,"rejectIv":172680,"rejectOp":172680},
+{"id":"BDSKY_ContempWilsonBalding.t:hcv2","p":"NaN","accept":7291,"reject":331416,"acceptFC":7267,"rejectFC":330662,"rejectIv":43362,"rejectOp":43362},
+{"id":"becomeUninfectiousRateScaler_BDSKY_Contemp.t:hcv2","p":0.7321385071071969,"accept":49481,"reject":175397,"acceptFC":49314,"rejectFC":175004,"rejectIv":23236,"rejectOp":0},
+{"id":"rhoScaler_BDSKY_Contemp.t:hcv2","p":0.2974500609109255,"accept":32904,"reject":80272,"acceptFC":32732,"rejectFC":80189,"rejectIv":149,"rejectOp":0},
+{"id":"reproductiveNumberScaler_BDSKY_Contemp.t:hcv2","p":0.44292043298271433,"accept":373931,"reject":752316,"acceptFC":372877,"rejectFC":750706,"rejectIv":30888,"rejectOp":0},
+{"id":"updownBD_BDSKY_Contemp.t:hcv2","p":0.8932932308964012,"accept":57368,"reject":167059,"acceptFC":57346,"rejectFC":166572,"rejectIv":18583,"rejectOp":0},
+{"id":"origScaler_BDSKY_Contemp.t:hcv2","p":0.9206314003049236,"accept":20203,"reject":92353,"acceptFC":20174,"rejectFC":92113,"rejectIv":17795,"rejectOp":0}
+]}
+-->

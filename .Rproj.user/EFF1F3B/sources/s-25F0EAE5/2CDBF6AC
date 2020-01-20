@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1579553735763.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1283633981",
+    "id" : "2CDBF6AC",
+    "lastKnownWriteTime" : 1579559420,
+    "last_content_update" : 1579559420704,
+    "path" : "~/Desktop/git_local/20200122_CodeClub/BDSKY_Re.rmd",
+    "project_path" : "BDSKY_Re.rmd",
+    "properties" : {
+        "cursorPosition" : "14,68",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

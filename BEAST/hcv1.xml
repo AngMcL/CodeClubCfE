@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><beast beautitemplate='Standard' beautistatus='' namespace="beast.core:beast.evolution.alignment:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.evolution.likelihood" required="" version="2.6">
+
+
+    <data
+id="hcv1"
+spec="Alignment"
+name="alignment">
+                    <sequence id="seq_AF271825i_0800" spec="Sequence" taxon="AF271825i_0800" totalcount="4" value="CTCTTGGCACTTCTTTCGTGCTTGACTGTCCCCGCTTCGGCCATCAACTACCGCAATGCTTCGGGCGTCTACCACGTCACCAACGACTGCCCGAATTCAAGCATAGTGTTTGAGGCCGACCATCACATCTTACACCTTCCAGGTTGCGTGCCCTGCGTGAGAGAGGGGAATCAGTCTCGTTGCTGGGTGGCTCTTACTCCTACTGTCGCAGCGCCACACATCGGCGCGCCGCTTGAATCCTTGCGGAGTCATGTGGATCTGATGGTGGGGGCTGCCACTGCTTGTTCGGCCCTTTACATCGGGGACTTGTGTGGCGGCTTGTTCTTGGTCGGTCAGATGTTCTCTTTCCGACCACGACGCCACTGGACTACCCAGGACTGCAATTGTTCTATCTATACAGGGCACATCACT"/>
+                    <sequence id="seq_AF271826i_0873" spec="Sequence" taxon="AF271826i_0873" totalcount="4" value="CTCTTGGCACTTCTCTCGTGCCTGACTGTCCCCGCTTCGGCCATTAACTACCACAATGTTTCGGGCATCTACCATGTCACCAATGACTGCCCAAATTCAAGCATAGTGTATGAGGCCGACCATCACATCCTACACCTCCCAGGTTGCGTGCCCTGCGTGAGGACGGGGAACCAGTCGCACTGCTGGGTGGCCCTTACTCCTACCGTCGCAGCGCCATACATCGGCGCACCGCTTGAGTCCCTGCGGAGTCATGTGGATCTGATGGTAGGGGCTGCCACTGTTTGTTCAGCCCTTTATATCGGGGATTTGTGTGGCGGCTTGTTTTTGGTTGGTCAGATGTTCTCTTTCCGACCACGGCGCCACTGGACCACCCAGGATTGCAATTGTTCCATCTATACGGGGCACATTACT"/>
+                    <sequence id="seq_AF271827i_0883" spec="Sequence" taxon="AF271827i_0883" totalcount="4" value="CTCTTGGCACTTCTCTCGTGCCTGACTGTCCCCACCTCGGCCATTAACTATCGCAATGCTTCGGGCGTTTACCATGTCACCAATGACTGCCCGAATTCAAGCATAGTGTATGAGGCCGACCATCACATCTTGCACCTTCCAGGTTGCGTGCCCTGCGTGAGAGAGGGGAATCAGTCACGCTGCTGGGTGGCCCTTACCCCCACCGTCGCAGCGCCATACATCGGCGCGCCACTTCAATCTCTACGGAGTCATGTGGATTTGATGGTGGGGGCCGCCACTGCTTGTTCAGCCCTTTACATCGGGGACTTGTGTGGCGGCTTGTTCTTGGTCGGTCAGATGTTCTCTTTCCGGCCACGGCGCCACTGGACTACCCAGGACTGCAATTGTTCCATCTATACAGGGCACATCATG"/>
+                    <sequence id="seq_AF271828i_0922" spec="Sequence" taxon="AF271828i_0922" totalcount="4" value="CTCTTGGCACTTCTCTCGTGCCTGACTGTCCCCGCTTCGGCCATTAACTATCGCAATGTCTCGGGCATTTACCACATCACCAATGACTGCCCGAATTCAAGCATAGTGTTTGAGGCCGATCACCACATCTTACACCTTCCAGGTTGCGTGCCCTGCGTGAGAGAGGGGAATCAGTCGCGTTGCTGGGTGGCCCTAACTCCTACCGTCGCAGCGCCGTACATCGGCGCACCACTTGAGTCCTTACGGAGTCATGTGGATTTGATGGTGGGGGCTGCCACTGCTTGTTCGGCCCTTTACATCGGGGATTTGTGTGGTGGCTTGTTCCTGGTTGGTCAGATGTTCTCCTTCCGACCACGGCGCCACTGGACTACCCAGGAATGCAATTGCTCCATCTATTCAGGACACCTCACT"/>
+                    <sequence id="seq_AF271829i_0923" spec="Sequence" taxon="AF271829i_0923" totalcount="4" value="CTCTTGGCACTTCTCTCGTGCCTGACTGTCCCCGCTTCGGCCACCAACTACCACAATGCTTCGGGCGTCTACCATGTCACCAATGACTGCCCAAATTCAAGCATAGTGTTTGAGGCCGACCATCACATCTTGCACCTTCCAGGTTGCGTGCCCTGCGTGAGAGAGGGGAATCAGTCGCGCTGCTGGGTGGCCCTTACTCCTACCGTCGCAGCGCCATACATCGGCGCGCCGCTTGAGTCTCTGCGGAGTCATGTGGATCTGATGGTGGGGGCTGCCACTGTCTGCTCAGCCTTTTACATCGGGGATTTGTGTGGTGGCGTGTTCTTGGTCGGTCAGATGTTCTCTTTCCGACCACGGCGCCACTGGACTACCCAAGACTGCAATTGTTCCATCTATGCAGGGCACATTACG"/>
+                    <sequence id="seq_AF271830i_1150" spec="Sequence" taxon="AF271830i_1150" totalcount="4" value="CTCTTGGCACTTCTCTCGTGCCTGACTGTCCCCGCTTCGGCCACTAACTATCGCAATGTCTCGGGTATCTATCATGTCACCAATGATTGCCCGAATTCAAGCATAGTGTATGAGGCCGACCATCACATCTTGCACCTTCCAGGTTGCGTGCCCTGCGTGAGAACGGGGAATCAGTCACGCTGCTGGGTGGCCCTTACTCCTACCGTCGCAGCGCCATACATCGGCGCGCCGCTTGCCTCCCTGCGGAGTCATGTGGATCTGATGGTGGGGGCCGCCACTGCTTGTTCAGCCCTTTACATCGGGGATTTGTGTGGCGGCTTGTTCTTGGTTGGTCAGATTTTCACCTTCCGACCACGGCGCCACTGGACTACCCAGGAATGCAATTGTTCCATCTATACAGGGCACATCACT"/>
+                    <sequence id="seq_AF271831i_1164" spec="Sequence" taxon="AF271831i_1164" totalcount="4" value="CTCTTGGCACTTCTCTCGTGCCTGACTGTCCCCGCTTCGGCCATCAACTATCGCAATGCCTCGGGCATCTACCATGTCACCAATGATTGCCCGAATTCAAGCATAGTGTATGAGGCCGAATATCACATCTTGCACCTTCCAGGTTGCGTGCCCTGCGTGAGCGATGGGAATCAGTCACGTTGCTGGGTGGCCCTTACTCCTACCGTTGCAGCGCCGTACGTTGGCGCGCCGCTTGAGTCCCTGCGGAGTCATGTGGATCTGATGGTGGGAGCTGCCACTGTTTGTTCAGCCCTTTACATCGGGGACTTGTGTGGCGGCTTGTTCTTGGTTGGTCAAATGTTCTCTTTCCAGCCACGGCGTCACTGGACTACCCAGGGTTGTAATTGTTCCATCTATACAGGGCACATCACT"/>
+                    <sequence id="seq_AF271832i_1226" spec="Sequence" taxon="AF271832i_1226" totalcount="4" value="CTCTTGGCACTTCTCTCGTGCCTGACTGTCCCCGCTTCGGCCTTCAACTACCGCAACATCTCGGGTATTTACCATGTCACCAACGACTGCCCGAATTCAAGCATAGTGTATGAGGCCGACCATCACATTTTGCACCTTCCAGGTTGCGTGCCCTGCGTGAGGGAGGGGAATCAGTCACGCTGCTGGGTGGCCCTTACTCCTACCGTCGCAGCGCCATACATCGGCGCACCGCTTGAGTCCCTGCGGAGTCATGTGGATATGATGGTGGGGGCTGCCACTGCTTGTTCAGCCCTTTACATCGGGGATCTGTGTGGCGGCTTGTTTTTGGTTGGTCAGATGTTTTCTTTCCGACCACGACGCCACTGGACTACCCAGGATTGCAATTGTTCCATCTATGCAGGGCATATCACT"/>
+                    <sequence id="seq_AF271833i_1240" spec="Sequence" taxon="AF271833i_1240" totalcount="4" value="CTCTTGGCACTACTCTCGTGCCTGACTGTCCCCGCTTCGGCCATTAATTACCGCAATGCCTCGGGCGTCTACCATGTCACCAATGACTGCCCGAATTCAAGCATAGTGTATGAGGCCGACCATCACATCCTGCACCTTCCAGGTTGCGTGCCCTGCGTGAGAACGGGGAATCAGTCACGCTGCTGGGTGGCCCTTACTCCTACTGTCGCAGCGCCATACATCGGCGCGCCGCTTGAGTCCTTGCGGAGTCATGTGGATCTGATGGTGGGGGCTGCCACTGCTTGTTCAGCCCTTTACATCGGGGATTTGTGTGGCGGCTTGTTTTTGGCTGGTCAGATGTTTTCTTTCCGGCCACGGCTCCACTGGACCACCCAGGATTGCAATTGTTCCATCTATACAGGGCACATCACT"/>
+                    <sequence id="seq_AF271834i_1339" spec="Sequence" taxon="AF271834i_1339" totalcount="4" value="CTCTTGGCACTTCTCTCGTGCCTGACTGTTCCCGCTTCGGCCGTTAACTACCGCGATGCTTCGGGCATCTACCATGTCACCAATGACTGCCCGAATTCAAGCATAGTGTATGAGGCCGACCATCACATCCTGCATCTCCCGGGTTGCGTGCCCTGCGTGAGAGTTGGGAATCAGTCACGTTGCTGGGTGGCCCTTACTCCTACCATCGCATCGCCATACATCGGTGCGCCGCTTGAATCCCTGCGGAGTCATGTGGATCTGATGGTGGGGGCTGCCACTGTTTGTTCAGCCCTTTACATCGGGGATTTGTGTGGCGGCTTGTTCTTGGTTGGTCAGATGTTCTCTTTCCGACCACGGCGTCACTGGACCACCCAGGATTGCAATTGTTCCATCTACACGGGGCACATCACT"/>
+                    <sequence id="seq_AF271835i_1767" spec="Sequence" taxon="AF271835i_1767" totalcount="4" value="CTCTTGGCACTTCTTTCGTGCTTGACTGTCCCCGCTTCGGCCGTTAACTACCGCAATGTCTCGGGCATCTACTATGTCACCAATGACTGCCCGAATTCAAGCATAGTGTATGAGGCCGACCACCACATCTTGCACTTGCCAGGCTGCGTGCCCTGCGTGCGGGTGGGGAACCAGTCACGTTGCTGGGTGGCTCTCACTCCTACCGTCGCAGCGCCATACATCGGCGCGCCACTTGAGTCTTTACGGAGTCATGTGGATTTGATGGTGGGGGCTGCCACTGTTTGTTCAGCCCTCTACATCGGGGATTTGTGTGGTGGCCTGTTCCTGGTTGGTCAGATGTTTTCTTTCCAACCACGGCGCCACTGGACCACCCAAGACTGCAATTGTTCCATCTATACGGGGCATATTACC"/>
+                    <sequence id="seq_AF271836i_1796" spec="Sequence" taxon="AF271836i_1796" totalcount="4" value="CTCTTGGCACTTCTCTCGTGCCTGACTGTCCCCGCTTCGGCCTTCAACTACCGCAACATCTCGGGTATTTACCATGTCACCAACGACTGCCCGAATTCAAGCATAGTGTATGAGGCCGACCATCACATTTTGCACCTTCCAGGTTGCGTGCCCTGCGTGAGGGAGGGGAATCAGTCGCGCTGCTGGGTGGCCCTTACTCCTACCGTCGCAGCGCCATACATCGGCGCACCGCTTGAGTCCCTGCGGAGTCACGTGGATATGATGGTGGGGGCTGCCACTGCTTGTTCAGCCCTTTACATCGGGGATCTGTGTGGCGGCTTGTTTCTGGTTGGTCAGATGTTTTCTTTCCGACCACGACGCCACTGGACTACCCAGGAGTGCAATTGTTCCATCTATTCAGGGCATATCACT"/>
+                    <sequence id="seq_AF271837i_1801" spec="Sequence" taxon="AF271837i_1801" totalcount="4" value="CTCTTGGCACTTCTCTCTTGTCTGACTGTCCCCGCTTCGGCCACTAACTACCGCAATGTTTCGGGCATCTACCACGTCACCAATGACTGCCCGAACTCAAGCATAGTGTATGAGGCCGACCATCACATCTTGCACCTTCCAGGTTGCGTGCCCTGTGTGAGGACGGGGAATCAGTCACGTTGCTGGGTGGCCCTTACCCCTACCGTCGCATCGCCATACATCGGCGCGCCACTTGCATCTCTACGGACTCATGTGGACTTGATGGTGGGGGCCGCCACTGTTTGTTCAGCCCTTTACATCGGAGATTTGTGTGGCGGCTTGTTCTTGGTTGGTCAAATGTTCTCTTTCCGACCAAGGCGCCACTGGACCACCCAGGATTGCAACTGTTCCATCTATACAGGGCACATCACT"/>
+                    <sequence id="seq_AF271838i_1803" spec="Sequence" taxon="AF271838i_1803" totalcount="4" value="CTCTTGGCACTTCTCTCGTGCCTGACTGTCCCCGCTTCGGCCACCAACTATCGCAATGTCTCGGGCATCTACCATGTCACCAATGACTGCCCGAATTCAAGCATAGTGTATGAGGCCGATCACCACATCTTGCACTTGCCAGGTTGCGTGCCCTGCGTGCAAACGGGGAATCAGTCACGTTGCTGGGTGGCCCTCACTCCTACCGTCGCAGCGCCGTATATCGGCGCGCCACTTGAGTCTTTACGGAGTCATGTGGATTTGATGGTGGGAGCTGCCACTGCTTGTTCAGCCCTTTACATCGGGGACTTGTGTGGCGGCCTGTTCCTGGTTGGTCAGATGTTCTCTTTCCGACCGCGGCGCCACTGGACCACCCAAGACTGCAATTGTTCCATCTACACAGGGCACATTACT"/>
+                    <sequence id="seq_AF271839i_1997" spec="Sequence" taxon="AF271839i_1997" totalcount="4" value="CTCTTGGCACTTCTTTCGTGCCTGACTGTTCCCNCTTCGGCCACTAACTATCGCAATGTTTCGGGCATCTACCATGTTACCAACGACTGCCCGAATTCAAGCATAGTATATGAGGCCGACCATCACATCTTGCACCTTCCAGGTTGCGTGCCCTGYGTGAAAGTCGGGAACCAGTCACGTTGCTGGGTGGCCCTTACTCCTACCGTCGCAGCGCCATACATCGGYGCTCCGCTTGAGTCCCTGCGGAATCATGTGGATYTGATGGTGGGGGCTGCCACTGTTTGTTCAGCCCTTTACATCGGRGAYTTGTGTGGCGGCTTGTTTTTGGTTGGTCAGATGTTTTCTTTTCGGCCACGACGCCACTGGACTACCCAAGACTGCAACTGTTCCATCTATACGGGACACATCATG"/>
+                    <sequence id="seq_AF271840i_2130" spec="Sequence" taxon="AF271840i_2130" totalcount="4" value="CTTTTGGCACTTCTCTCGTGCCTGACTGTCCCCGCTTCGGCCATTAACTATCGCAATGTCTCGGGCATCTACCACGTCACCAACGACTGCCCGAATTCAAGCATAGTGTATGAGGCCGACCATCACATCTTGCACCTTCCAGGTTGCGTGCCCTGCGTGAGGACGGGGAATCAGTCACGTTGCTGGGTGGCCCTTACTCCTACCGTCGCAGCGCCATACATCGGCGCGCCACTTGAGTCTCTACGGAGTCATGTGGATTTGATGGTGGGGGCTGCCACTGTTTGTTCAGCCCTTTACATCGGGGATTTGTGTGGCGGCTTGTTCCTGGTTGGTCAGATGTTCTCTTTCCGACCACGGCGCCACTGGACCACCCAGGATTGCAATTGTTCCATCTATACGGGGCACATCACT"/>
+                    <sequence id="seq_AF271841i_2134" spec="Sequence" taxon="AF271841i_2134" totalcount="4" value="CTTCTGGCACTTCTCTCGTGCCTGACTGTCCCCGCTTCGGCCATCAACTATAGCAACGTCTCGGGCATCTACCATGTCACCAATGACTGCCCGAATTCAAGCATAGTGTATGAGACCGAACATCACATCTTGCACCTTCCAGGTTGCGTGCCCTGCGTGCGTGACGGGAATCAGTCGCGTTGCTGGGTGGCCCTTACCCCTACCGTCGCAGCGTCACGACTCGACGCGCCGCTTGAGTCCTTGCGGAGTCATGTGGATCTGATGGTGGGGGCTGCCACTGCTTGCTCAGCCCTTTACATCGGGGATTTGTGTGGCGGTCTGTTCTTGGTTGGTCAGATGTTCTCTTTCCGCCCACGGCGCCTCTGGACTACCCAGGATTGCAATTGTTCCATTTATACAGGGCACATCACT"/>
+                    <sequence id="seq_AF271842i_2141" spec="Sequence" taxon="AF271842i_2141" totalcount="4" value="CTCTTGGCACTTCTCTCGTGCCTGACTGTCCCCGCTTCGGCCACTAACTACCGCAACGCTTCGGGCATCTACCATGTCACCAATGACTGCCCGAATGCGAGCATAGTGTATGAGGCCGACCATCACATCCTGCACCTTCCAGGTTGCGTGCCCTGCGTGAGAAAGGGGAATCAGTCAAGCTGCTGGGTGGCCCTTACTCCTACCGTCGCAGCGCCATACATCGGCGCGCCGCTTGAGTCCTTGCGGAGTCATGTGGATCTGATGGTGGGGGCTGCCACTGTCTGTTCAGCCCTCTACATCGGGGATTTGTGTGGCGGCGTGTTCTTGGTTGGTCAGATGTTCTCTTTCCGACCACGACGCCACTGGACTACCCAGGATTGCAATTGTCCCATCTATACAGGGCCCATTACT"/>
+                    <sequence id="seq_AF271843i_2147" spec="Sequence" taxon="AF271843i_2147" totalcount="4" value="CTCTTGGCACTCCTCTCGTGCCTGACTGTCCCCGCTTCGGCCATTAACTATCACAACACCTCGGGCGTCTACCACGTCACCAATGACTGCCCGAATTCAAGCATAGTCTATGAGGCCGACCATCACATCTTGCATCTCCCAGGGTGCGTGCCCTGCGTGAGAGAGGGGAATCAGTCACGTTGCTGGGTGGCCCTCACCCCTACCGTCGCAGCGCCATACATCGGCGCGCCGCTTGAGTCCTTGCGGAGTCACGTGGATCTGATGGTGGGGGCAGCTACTGTCTGCTCTGCCCTTTACATCGGGGATTTGTGTGGCGGCGTGTTCTTGGTTGGTCAGATGTCCTCTTTCCGACCACGGCGCCACTGGACTACCCAGGAGTGCAATTGTTCCATCTATACAGGGCACATCACT"/>
+                    <sequence id="seq_AF271844i_2150" spec="Sequence" taxon="AF271844i_2150" totalcount="4" value="CTCTTGGCACTTCTCTCGTGCCTGAGTGTCCCCGCCTCGGCAATTAATTACCGCAATGCTTCGGGTGTCTACCACGTCACCAATGACTGCCCGAATTCAAGCATAGTGTATGAGGCCGACCATCACATCTTGCATCTTCCAGGCTGCGTGCCCTGCGTGAGAACGGGGAATCAGTCACGTTGCTGGGTGGCCCTTACTCCCACCGTCGCGACGCCATACATCGGCGCACCGCTTGAGTCCCTGCGGATTCATGTGGATCTGATGGTGGGGGCTGCCATTGCTTGTTCACCCCTTTACATCGGGGATTTGTGTGGCGGCTTGTTCTTGGTCGGTCAGATGTTCTCTTCCCGACCAAGGCTTCACTGGACTACTCAGGATCGCCATTGTTCCATCTATACGGGGCACATCTCC"/>
+                    <sequence id="seq_AF271845i_2386" spec="Sequence" taxon="AF271845i_2386" totalcount="4" value="CTCTTGGCACTTCTCTCGTGCCTGACTGTCCCCGCTTCGGCCATCAACTACCGCAATGCTTCGGGCGTTTACCACATCACCAACGACTGCCCGAATTCAAGCATAGTGTATGAGGCCGACCATCACATCATGCACCTTCCAGGTTGCGTGCCCTGCGTGAGGACGGGGAATCAGTCACGTTGCTGGGTGGCCCTTACTCCTACCGTCGCAGTGCCGTATATTGGCGCGCCACTTGACTCTCTTCGGAGTCATGTGGATTTGATGGTGGGGGCTGCTGCTGCTTGTTCAGCCCTTTACGTCGGGGACTTGTGTGGTGGCGTGTTCCTGGTCGGTCAGATGTTCTCTTTCCGACCACGGCGCCACTGGACTACCCAGGACTGCAACTGTTCCATCTACACAGGGCACATTACT"/>
+                    <sequence id="seq_AF271846i_2429" spec="Sequence" taxon="AF271846i_2429" totalcount="4" value="CTCTTGGCACTTCTCTCGTGCCTGACTGTCCCCGCTTCGGCCATTAACTACCGCAATGTCTCGGGCATTTACCATGTCACCAATGACTGCCCGAATTCAAGCATAGTGTATGAGGCCGACCATCACATCTTGCACCTTCCAGGTTGCGTGCCCTGCGTGAGAACGGGGAATCAGTCACGTTGCTGGGTGGCCCTAACTCCTACCGTCGCGGCACCACACATCGGTGCGCCACTTGAGTCTCTACGGAGTCATGTGGATTTGATGGTGGGGACCGCCACTGTTTGTTCAGCCCTTTACATCGGGGATTTATGTGGTGGTTTGTTCCTGGTTGGTCAGATGTTCTCTTTCCGACCACGGCGTCACTGGACCACCCAGGATTGCAATTGTTCCATCTACACAGGGCACATCACT"/>
+                    <sequence id="seq_AF271847i_2438" spec="Sequence" taxon="AF271847i_2438" totalcount="4" value="CTCTTGGCACTTCTCTCGTGCCTGACTGTCCCCGCTTCGGCTGTCAACTACCGCAAYGCTTCGGGCGTTTACCATATCACCAATGAYTGTCCGAATGGAAGCATAGTGTATGAGGCCGACCATCACATYTTGCACCTCCCAGGTTGCGTGCCCTGCGTGAGARAGGGGAATCAGTCACGTTGCTGGGTAGCCCTTACTCCTACCMTCGCGGCGCCACACATCGGCGCGCCACTTGAATCTCTACGGAAACATGTGGATTTGAKGGTGGGAGCTGCTACWGCCTGTTCAGCCCTTTACATCGGGGATTTGTGTGCCGGCTTGTTCTTGGTCGGTCAGATGTTATCATTCCGACCACGACGCCACTGGACTACCCAGGATTGCAGTTGTTCCATCTAAACAGGACGAAGTGTT"/>
+                    <sequence id="seq_AF271848i_2446" spec="Sequence" taxon="AF271848i_2446" totalcount="4" value="CTCTTGGCACTTCTCTCGTGCCTGACTGTCCCCGCTTCGGCCATCAACTATCGCAATGCCTCGGGCATCTATCACGTCACCAATGACTGCCCGAATTCGAGCATAGTGTATGAGGCCGACAACCACATCCTGCACCTTCCAGGTTGCGTGCCCTGTGTGAAAGAGGGGAATCAGTCACGTTGCTGGGTGTCCCTTACTCCCACCGTCGCAGCGCCATACATCGGCGCGCCACTTGCGTCTCTACGGAGTCACGTGGATTTGATGGTGGGGGCTGCCACTGTTTGTTCAGCCCTCTACATCGGGGACTTGTGCGGCGGCTTGTTCTTGGTTGGCCAGATGTTCTCTTTCCAACCACGGCGTCACTGGACCACCCAGGATTGTAATTGTTCCATCTATACAGGGCACATCACT"/>
+                    <sequence id="seq_AF271849i_2663" spec="Sequence" taxon="AF271849i_2663" totalcount="4" value="CTCTTAGCACTTCTCTCGTGCCTGACTGTCCCCGCTTCGGCCGTTAACTACCGCAATGCTTCGGGTGTCTATCATATCACCAATGATTGCCCGAATTCAAGCATAGTGTATGAGGCCGACCATCACATCATGCACCTTCCAGGTTGCGTGCCCTGCGTGAGAACGGGGAACCAGTCACGTTGCTGGGTGGCCCTTACTCCTACCATYGCAGCGCCATACATCGGCGCGTCGCTCGAGTCCTTGCGGAGTCATGTGGATGTGATGGTGGGGGCYGCCACTGTTTGTTCAGCCCTTTACATCGGGGACTTGTGTGGTGGCTTGTTCTTGGTTGGTCAGATGTTCTCTTTCCGACCRCGGCGCCACTGGACTACCCAGGACTGCAACTGTTCCATTTATACAGGGCAGATACTG"/>
+                    <sequence id="seq_AF271850i_2673" spec="Sequence" taxon="AF271850i_2673" totalcount="4" value="CTTTTGGCACTTCTCTCGTGCCTGACCGTCCCCGCTTCGGCCACCAACTATCGCAATGTCTCGGGCGTCTACCACATCACCAATGACTGCCCGAATTCAAGCATAGTGTATGAGGCCGACCATCACATCTTGCACCTTCCAGGTTGCGTGCCCTGCGTGAAAGAGGGGAACCGGTCACGTTGCTGGGTGGCCCTTACTCCTACCGTCGCAGCGCCATACCTTGGCGCGCCACTTGAGTCTTTACGGAGCCATGTGGACTTGATGGTGGGAGCTGCCACTGCTTGTTCAGCCCTTTACATCGGAGACTTGTGTGGTGGCTTGTTCCTGGTTGGTCAGATGTTCTCTTTCCGACCACGACGCCACTGGACTACCCAAGAATGCAATTGTTCCATCTATACAGGGCACATCACT"/>
+                    <sequence id="seq_AF271851i_2681" spec="Sequence" taxon="AF271851i_2681" totalcount="4" value="CTCTTGSCACTTCTCTCGTGCCTGACTGTCCCCACTTCGGCCATTAACTACCATAATGTTTCGGGCATCTATCACGTCACCAATGATTGTCCGAATTCAAGCATTGTGTATGAGGCCGATCATCACATCTTGCACGTTCCAGGCTGTGTGCCCTGCGTGAGAGAGGGAAATCAGTCACGTTGCTGGGTGGCCATTACTCCTACCCTCGCAGCGCCATACATCGGCGCGCCGCTTGAGTCCCTGCGGAGTCACGTGGATMTGATGGTGGGGGCTGCCACTGCTTGNTCAGCCCTTTACATCGGGGATTTGTGTGCCGGTCTGTTCTTGGTTGGTCAGATGTTATCTTTCCGACCACGGCGCCACTGGACTACCCAGGATTGCAATTGTTCCATCTATACAGGAGCGNGTGTT"/>
+                    <sequence id="seq_AF271852i_2685" spec="Sequence" taxon="AF271852i_2685" totalcount="4" value="CTCTTGGCACTTCTCTCGTGCTTGACTGTCCCCGCTTCGGCCATTAACTACCGCAATGCGTCGGGCATCTACCATGTCACCAATGATTGCCCGAATTCAAGCATAGTGTATGAGGCCGACCATCACATCTTGCACCTTCCAGGTTGCGTGCCCTGTGTGAGAGTGGGGAATCAGTCACGTTGCTGGGTGGCCCTTACTCCCACCGTCGCAGCGCCATACATCGGCGCGTCACTTGCATCTTTGCGGAGTCATGTGGATCTGATGGTGGGGACCGCCACTGTTTGTTCAGCCCTCTACATCGGGGATTTGTGTGGCGGCTTGTTCTTGGTTGGTCAGATGTTCTCTTTCCAACCACGGCGCCACTGGACTACCCAGGATTGCAATTGTTCTATCTATACAGGGCACATCACT"/>
+                    <sequence id="seq_AF271853i_2852" spec="Sequence" taxon="AF271853i_2852" totalcount="4" value="CTCTTGGCACTTCTCTCGTGCCTGACTGTCCCCGCTTCGGCCATCAACTACCACAATGTCTCGGGCATCTACCATGTCACCAATGATTGCCCGAACTCAAGCATAGTGTATGAGGCCGAGCACCACATCCTGCACCTTCCTGGTTGCGTGCCCTGCGTGAGAGTGGGGAATCAGTCACGTTGCTGGGTGGCCCTTACTCCTACCGTCGCAGCGCCATACATCGGCGCGCCGCTTGACTCCTTGCGGAGTCATGTGGATTTGATGGTGGGAACCGCCACTGTTTGTTCAGCTCTTTACATCGGGGACTTGTGTGGCGGCTTGTTCTTGGTTGGTCAGATGTTTTCTTTTCAACCACGGCGCCATTGGACTACCCAGGATTGCAATTGTTCCATCTATACAGGACACATCACT"/>
+                    <sequence id="seq_AF271854i_2856" spec="Sequence" taxon="AF271854i_2856" totalcount="4" value="CTCTTGGCACTTCTCTCGTGCCTGACTGTCCCTGCTTCGGCCATCAATTACCGCAATGCCTCGGGCGTTTACCACATCACCAACGACTGCCCGAATTCAAGCATAGTGTATGAGGCCGACCATCACATCTTGCATCTTCCAGGTTGCGTGCCCTGCGTAAGAGTGGGGAATCAGTCACGCTGCTGGGTGTCCCTTACTCCTACCGTCGCAGCGCCATACATCGGCGCACCACTTGAGTCTCTACGGAGTCATGTAGACTTGATGGTGGGAGCTGCCACTGCTTGTTCAGCCCTTTACATCGGGGACTTGTGTGGCGGCTTGTTTCTGGTCGGTCAGATGTTCTCTTTCCGACCGCGACGCCACTGGACTACCCAGGATTGCAATTGTTCCATCTATACAGGGCACATCACT"/>
+                    <sequence id="seq_AF271855i_2862" spec="Sequence" taxon="AF271855i_2862" totalcount="4" value="CTCTTGGCACTTCTCTCGTGCCTGACTGTCCCCGCTTCGGCYATCAACTACCGCAATGCYTCGGGCGTCTACCATGTCACCAATGACTGCCCGAATTCAAGCATAGTGTATGAGGCCGACCATCAYATCTTGCACCTTCCAGGATGCGTGCCCTGCGTGAAAGTGGGAAATCAGTCACGTTGCTGGGTGGCCCTTACTCCTACCGTCGCAGCGCCATATRTTGGCGCGCCGCTTGAGTCCYTGCGGAGTCATGTGGACCTGATGGTGGGAGCTGCTACTGTCTGCTCAGCCCTTTACATTGGGGATTTGTGTGGCGGCGTGTTCTTGGTCGGCCAGATGTTCTCTTTCCGACCACGGCGCCACTGGACTACCCAGGAGTGCAATTGTTCCATCTATACAGGGCAACTTACT"/>
+                    <sequence id="seq_AF271856i_2926" spec="Sequence" taxon="AF271856i_2926" totalcount="4" value="CTCTTGGCACTTCTCTCGTGCCTGACTGTCCCCGCTTCGGCCATTAACTATCGCAATGTTTCGGGCGTCTACCACGTCACCAATGACTGCCCGAATTCAAGCATAGTGTATGAGGCCGAGCATCACATCTTGCACCTCCCAGGTTGCGTGCCCTGCGTGAGAACGGGGAATCAGTCAAGTTGCTGGATGGCCCTTACCCCTACTGTCGCAGCGCCATACATCGGCGCGCCGCTTGAGTCCTTGCGGAGTCATGTGGATCTGATGGTGGGGGCCGCCACTGTTTGTTCAGCCCTTTACATCGGCGATCTGTGTGGCGGCTTGTTCTTGGTTGGCCAAATGTTCTCTTTCCAACCGCGGCGCCACTGGACCACCCAGGAGTGCAATTGTTCCATCTATACAGGGCACATCACT"/>
+                    <sequence id="seq_AF271857i_2957" spec="Sequence" taxon="AF271857i_2957" totalcount="4" value="CTCTTGGCACTTCTCTCGTGCCTGACTGTCCCCGCTTCGGCCRTCAACTACCGCAAYGTCTCGGGCATCTACCATGTCACCAACGACTGCCCGAATTCAAGCATAGTGTATGAGGCCGACCAYCACATCTTGCACCTTCCAGGTTGCGTGCCCTGCGTGAAACAGGGGAATCAGTCACGTTGCTGGGTGGCCCTCACYCCTACCGTCGCAGCGCCATACATCGGCGCGCCGCTTGAGTCCCTGCGGAGTCATGTGGATTTRATGGTGGGAGCTGCCACTGTTTGTTCAGCCTTTTACATCGGCGATTTGTGTGGCGGCTTGTTCTTGGTTGGTCAGATGTTCTCMTTCCGACCACGGCGCCACTGGACTACCCAGGATTGCAATTGTTCCATCTATACAGGGCACATCATG"/>
+                </data>
+
+
+    
+
+
+    
+
+
+    
+<map name="Uniform" >beast.math.distributions.Uniform</map>
+<map name="Exponential" >beast.math.distributions.Exponential</map>
+<map name="LogNormal" >beast.math.distributions.LogNormalDistributionModel</map>
+<map name="Normal" >beast.math.distributions.Normal</map>
+<map name="Beta" >beast.math.distributions.Beta</map>
+<map name="Gamma" >beast.math.distributions.Gamma</map>
+<map name="LaplaceDistribution" >beast.math.distributions.LaplaceDistribution</map>
+<map name="prior" >beast.math.distributions.Prior</map>
+<map name="InverseGamma" >beast.math.distributions.InverseGamma</map>
+<map name="OneOnX" >beast.math.distributions.OneOnX</map>
+
+
+<run id="mcmc" spec="MCMC" chainLength="10000000">
+    <state id="state" spec="State" storeEvery="5000">
+        <tree id="Tree.t:hcv1" spec="beast.evolution.tree.Tree" name="stateNode">
+            <taxonset id="TaxonSet.hcv1" spec="TaxonSet">
+                <alignment idref="hcv1"/>
+            </taxonset>
+        </tree>
+        <parameter id="gammaShape.s:hcv1" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
+        <parameter id="freqParameter.s:hcv1" spec="parameter.RealParameter" dimension="4" lower="0.0" name="stateNode" upper="1.0">0.25</parameter>
+        <parameter id="rateAC.s:hcv1" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
+        <parameter id="rateAG.s:hcv1" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
+        <parameter id="rateAT.s:hcv1" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
+        <parameter id="rateCG.s:hcv1" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
+        <parameter id="rateGT.s:hcv1" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
+        <parameter id="origin_BDSKY_Contemp.t:hcv1" spec="parameter.RealParameter" lower="0.0" name="stateNode" upper="Infinity">1000.0</parameter>
+        <parameter id="rho_BDSKY_Contemp.t:hcv1" spec="parameter.RealParameter" lower="0.0" name="stateNode" upper="1.0">0.01</parameter>
+        <parameter id="becomeUninfectiousRate_BDSKY_Contemp.t:hcv1" spec="parameter.RealParameter" lower="0.0" name="stateNode" upper="Infinity">1.0</parameter>
+        <parameter id="reproductiveNumber_BDSKY_Contemp.t:hcv1" spec="parameter.RealParameter" dimension="10" lower="0.0" name="stateNode" upper="Infinity">2.0</parameter>
+    </state>
+
+    <init id="RandomTree.t:hcv1" spec="beast.evolution.tree.RandomTree" estimate="false" initial="@Tree.t:hcv1" taxa="@hcv1">
+        <populationModel id="ConstantPopulation0.t:hcv1" spec="ConstantPopulation">
+            <parameter id="randomPopSize.t:hcv1" spec="parameter.RealParameter" name="popSize">1.0</parameter>
+        </populationModel>
+    </init>
+
+    <distribution id="posterior" spec="util.CompoundDistribution">
+        <distribution id="prior" spec="util.CompoundDistribution">
+            <distribution id="BDSKY_Contemp.t:hcv1" spec="beast.evolution.speciation.BirthDeathSkylineModel" becomeUninfectiousRate="@becomeUninfectiousRate_BDSKY_Contemp.t:hcv1" contemp="true" origin="@origin_BDSKY_Contemp.t:hcv1" reproductiveNumber="@reproductiveNumber_BDSKY_Contemp.t:hcv1" rho="@rho_BDSKY_Contemp.t:hcv1" tree="@Tree.t:hcv1">
+                <parameter id="samplingProportion_BDSKY_Contemp.t:hcv1" spec="parameter.RealParameter" estimate="false" name="samplingProportion">0.0</parameter>
+            </distribution>
+            <prior id="becomeUninfectiousRatePrior_BDSKY_Contemp.t:hcv1" name="distribution" x="@becomeUninfectiousRate_BDSKY_Contemp.t:hcv1">
+                <LogNormal id="LogNormalDistributionModel.0" name="distr">
+                    <parameter id="RealParameter.15" spec="parameter.RealParameter" estimate="false" name="M">0.0</parameter>
+                    <parameter id="RealParameter.16" spec="parameter.RealParameter" estimate="false" name="S">1.25</parameter>
+                </LogNormal>
+            </prior>
+            <prior id="FrequenciesPrior.s:hcv1" name="distribution" x="@freqParameter.s:hcv1">
+                <Uniform id="Uniform.3" name="distr"/>
+            </prior>
+            <prior id="GammaShapePrior.s:hcv1" name="distribution" x="@gammaShape.s:hcv1">
+                <Exponential id="Exponential.0" name="distr">
+                    <parameter id="RealParameter.0" spec="parameter.RealParameter" estimate="false" name="mean">1.0</parameter>
+                </Exponential>
+            </prior>
+            <prior id="originPrior_BDSKY_Contemp.t:hcv1" name="distribution" x="@origin_BDSKY_Contemp.t:hcv1">
+                <LogNormal id="LogNormalDistributionModel.2" name="distr">
+                    <parameter id="RealParameter.21" spec="parameter.RealParameter" estimate="false" name="M">5.0</parameter>
+                    <parameter id="RealParameter.22" spec="parameter.RealParameter" estimate="false" lower="0.0" name="S" upper="5.0">0.5</parameter>
+                </LogNormal>
+            </prior>
+            <prior id="RateACPrior.s:hcv1" name="distribution" x="@rateAC.s:hcv1">
+                <Gamma id="Gamma.0" name="distr">
+                    <parameter id="RealParameter.1" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
+                    <parameter id="RealParameter.2" spec="parameter.RealParameter" estimate="false" name="beta">10.0</parameter>
+                </Gamma>
+            </prior>
+            <prior id="RateAGPrior.s:hcv1" name="distribution" x="@rateAG.s:hcv1">
+                <Gamma id="Gamma.1" name="distr">
+                    <parameter id="RealParameter.3" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
+                    <parameter id="RealParameter.4" spec="parameter.RealParameter" estimate="false" name="beta">20.0</parameter>
+                </Gamma>
+            </prior>
+            <prior id="RateATPrior.s:hcv1" name="distribution" x="@rateAT.s:hcv1">
+                <Gamma id="Gamma.2" name="distr">
+                    <parameter id="RealParameter.5" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
+                    <parameter id="RealParameter.6" spec="parameter.RealParameter" estimate="false" name="beta">10.0</parameter>
+                </Gamma>
+            </prior>
+            <prior id="RateCGPrior.s:hcv1" name="distribution" x="@rateCG.s:hcv1">
+                <Gamma id="Gamma.3" name="distr">
+                    <parameter id="RealParameter.7" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
+                    <parameter id="RealParameter.8" spec="parameter.RealParameter" estimate="false" name="beta">10.0</parameter>
+                </Gamma>
+            </prior>
+            <prior id="RateGTPrior.s:hcv1" name="distribution" x="@rateGT.s:hcv1">
+                <Gamma id="Gamma.5" name="distr">
+                    <parameter id="RealParameter.11" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
+                    <parameter id="RealParameter.12" spec="parameter.RealParameter" estimate="false" name="beta">10.0</parameter>
+                </Gamma>
+            </prior>
+            <prior id="reproductiveNumberPrior_BDSKY_Contemp.t:hcv1" name="distribution" x="@reproductiveNumber_BDSKY_Contemp.t:hcv1">
+                <LogNormal id="LogNormalDistributionModel.1" name="distr">
+                    <parameter id="RealParameter.17" spec="parameter.RealParameter" estimate="false" name="M">0.0</parameter>
+                    <parameter id="RealParameter.18" spec="parameter.RealParameter" estimate="false" name="S">1.25</parameter>
+                </LogNormal>
+            </prior>
+            <prior id="rhoPrior_BDSKY_Contemp.t:hcv1" name="distribution" x="@rho_BDSKY_Contemp.t:hcv1">
+                <Beta id="Beta.0" name="distr">
+                    <parameter id="RealParameter.13" spec="parameter.RealParameter" estimate="false" name="alpha">1.0</parameter>
+                    <parameter id="RealParameter.14" spec="parameter.RealParameter" estimate="false" name="beta">9999.0</parameter>
+                </Beta>
+            </prior>
+        </distribution>
+        <distribution id="likelihood" spec="util.CompoundDistribution" useThreads="true">
+            <distribution id="treeLikelihood.hcv1" spec="ThreadedTreeLikelihood" data="@hcv1" tree="@Tree.t:hcv1">
+                <siteModel id="SiteModel.s:hcv1" spec="SiteModel" gammaCategoryCount="4" shape="@gammaShape.s:hcv1">
+                    <parameter id="mutationRate.s:hcv1" spec="parameter.RealParameter" estimate="false" name="mutationRate">1.0</parameter>
+                    <parameter id="proportionInvariant.s:hcv1" spec="parameter.RealParameter" estimate="false" lower="0.0" name="proportionInvariant" upper="1.0">0.0</parameter>
+                    <substModel id="gtr.s:hcv1" spec="GTR" rateAC="@rateAC.s:hcv1" rateAG="@rateAG.s:hcv1" rateAT="@rateAT.s:hcv1" rateCG="@rateCG.s:hcv1" rateGT="@rateGT.s:hcv1">
+                        <parameter id="rateCT.s:hcv1" spec="parameter.RealParameter" estimate="false" lower="0.0" name="rateCT">1.0</parameter>
+                        <frequencies id="estimatedFreqs.s:hcv1" spec="Frequencies" frequencies="@freqParameter.s:hcv1"/>
+                    </substModel>
+                </siteModel>
+                <branchRateModel id="StrictClock.c:hcv1" spec="beast.evolution.branchratemodel.StrictClockModel">
+                    <parameter id="clockRate.c:hcv1" spec="parameter.RealParameter" estimate="false" name="clock.rate">7.9E-4</parameter>
+                </branchRateModel>
+            </distribution>
+        </distribution>
+    </distribution>
+
+    <operator id="gammaShapeScaler.s:hcv1" spec="ScaleOperator" parameter="@gammaShape.s:hcv1" scaleFactor="0.5" weight="0.1"/>
+
+    <operator id="FrequenciesExchanger.s:hcv1" spec="DeltaExchangeOperator" delta="0.01" weight="0.1">
+        <parameter idref="freqParameter.s:hcv1"/>
+    </operator>
+
+    <operator id="RateACScaler.s:hcv1" spec="ScaleOperator" parameter="@rateAC.s:hcv1" scaleFactor="0.5" weight="0.1"/>
+
+    <operator id="RateAGScaler.s:hcv1" spec="ScaleOperator" parameter="@rateAG.s:hcv1" scaleFactor="0.5" weight="0.1"/>
+
+    <operator id="RateATScaler.s:hcv1" spec="ScaleOperator" parameter="@rateAT.s:hcv1" scaleFactor="0.5" weight="0.1"/>
+
+    <operator id="RateCGScaler.s:hcv1" spec="ScaleOperator" parameter="@rateCG.s:hcv1" scaleFactor="0.5" weight="0.1"/>
+
+    <operator id="RateGTScaler.s:hcv1" spec="ScaleOperator" parameter="@rateGT.s:hcv1" scaleFactor="0.5" weight="0.1"/>
+
+    <operator id="BDSKY_ContempTreeScaler.t:hcv1" spec="ScaleOperator" scaleFactor="0.5" tree="@Tree.t:hcv1" weight="3.0"/>
+
+    <operator id="BDSKY_ContempTreeRootScaler.t:hcv1" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@Tree.t:hcv1" weight="3.0"/>
+
+    <operator id="BDSKY_ContempUniformOperator.t:hcv1" spec="Uniform" tree="@Tree.t:hcv1" weight="30.0"/>
+
+    <operator id="BDSKY_ContempSubtreeSlide.t:hcv1" spec="SubtreeSlide" tree="@Tree.t:hcv1" weight="15.0"/>
+
+    <operator id="BDSKY_ContempNarrow.t:hcv1" spec="Exchange" tree="@Tree.t:hcv1" weight="15.0"/>
+
+    <operator id="BDSKY_ContempWide.t:hcv1" spec="Exchange" isNarrow="false" tree="@Tree.t:hcv1" weight="3.0"/>
+
+    <operator id="BDSKY_ContempWilsonBalding.t:hcv1" spec="WilsonBalding" tree="@Tree.t:hcv1" weight="3.0"/>
+
+    <operator id="becomeUninfectiousRateScaler_BDSKY_Contemp.t:hcv1" spec="ScaleOperator" parameter="@becomeUninfectiousRate_BDSKY_Contemp.t:hcv1" scaleFactor="0.75" weight="2.0"/>
+
+    <operator id="rhoScaler_BDSKY_Contemp.t:hcv1" spec="ScaleOperator" parameter="@rho_BDSKY_Contemp.t:hcv1" scaleFactor="0.75" weight="1.0"/>
+
+    <operator id="reproductiveNumberScaler_BDSKY_Contemp.t:hcv1" spec="ScaleOperator" parameter="@reproductiveNumber_BDSKY_Contemp.t:hcv1" scaleFactor="0.75" weight="10.0"/>
+
+    <operator id="updownBD_BDSKY_Contemp.t:hcv1" spec="UpDownOperator" scaleFactor="0.75" weight="2.0">
+        <up idref="reproductiveNumber_BDSKY_Contemp.t:hcv1"/>
+        <down idref="becomeUninfectiousRate_BDSKY_Contemp.t:hcv1"/>
+    </operator>
+
+    <operator id="origScaler_BDSKY_Contemp.t:hcv1" spec="ScaleOperator" parameter="@origin_BDSKY_Contemp.t:hcv1" scaleFactor="0.75" weight="1.0"/>
+
+    <logger id="tracelog" spec="Logger" fileName="$(filebase).log" logEvery="1000" model="@posterior" sanitiseHeaders="true" sort="smart">
+        <log idref="posterior"/>
+        <log idref="likelihood"/>
+        <log idref="prior"/>
+        <log idref="treeLikelihood.hcv1"/>
+        <log id="TreeHeight.t:hcv1" spec="beast.evolution.tree.TreeHeightLogger" tree="@Tree.t:hcv1"/>
+        <log idref="gammaShape.s:hcv1"/>
+        <log idref="freqParameter.s:hcv1"/>
+        <log idref="rateAC.s:hcv1"/>
+        <log idref="rateAG.s:hcv1"/>
+        <log idref="rateAT.s:hcv1"/>
+        <log idref="rateCG.s:hcv1"/>
+        <log idref="rateGT.s:hcv1"/>
+        <log idref="BDSKY_Contemp.t:hcv1"/>
+        <log idref="origin_BDSKY_Contemp.t:hcv1"/>
+        <log idref="rho_BDSKY_Contemp.t:hcv1"/>
+        <log idref="becomeUninfectiousRate_BDSKY_Contemp.t:hcv1"/>
+        <log idref="reproductiveNumber_BDSKY_Contemp.t:hcv1"/>
+    </logger>
+
+    <logger id="screenlog" spec="Logger" logEvery="1000">
+        <log idref="posterior"/>
+        <log idref="likelihood"/>
+        <log idref="prior"/>
+    </logger>
+
+    <logger id="treelog.t:hcv1" spec="Logger" fileName="$(filebase).trees" logEvery="1000" mode="tree">
+        <log id="TreeWithMetaDataLogger.t:hcv1" spec="beast.evolution.tree.TreeWithMetaDataLogger" tree="@Tree.t:hcv1"/>
+    </logger>
+
+</run>
+
+</beast>

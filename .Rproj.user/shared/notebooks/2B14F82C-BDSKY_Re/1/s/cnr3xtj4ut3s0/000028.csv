@@ -1,0 +1,6 @@
+"0","plotSkylinePretty(times1, Re_gridded_hpd2, type='smooth', axispadding=0.0, 
+                  col=fav[4], fill=fav[5], alpha=0.5,
+                  xlab=""Time"", ylab=expression(""R""[e]), side=2, yline=2.5, xline=2, xgrid=TRUE, 
+                  ygrid=TRUE, gridcol=pal.dark(cgray), ylims=c(0,3.5), new=TRUE, add=TRUE)
+"
+"2","calling par(new=TRUE) with no plot"

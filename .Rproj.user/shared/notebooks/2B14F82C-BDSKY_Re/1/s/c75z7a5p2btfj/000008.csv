@@ -1,0 +1,6 @@
+"0","#setup colors
+fav<-wes_palette(""Zissou1"",alpha=0.5)
+"
+"2","Error in wes_palette(""Zissou1"", alpha = 0.5) : 
+  unused argument (alpha = 0.5)
+"

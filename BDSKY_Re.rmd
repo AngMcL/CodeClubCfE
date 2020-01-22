@@ -20,18 +20,18 @@ https://taming-the-beast.org/tutorials/Skyline-plots/
 Louis de Plessis' bdskytools package:
 https://github.com/laduplessis/bdskytools
 
-```{r Run this chunk if you need to install these libraries}
-install.packages("devtools")
-library(devtools)
-devtools::install_github("laduplessis/bdskytools")
-install.packages("ggplot2")
-install.packages("dplyr")
-install.packages("tidyr")
-install.packages("wesanderson") #very important
-install.packages("RColorBrewer")
+```{r Run this chunk if you need to install these libraries, echo=FALSE}
+# install.packages("devtools")
+# library(devtools)
+# devtools::install_github("laduplessis/bdskytools")
+# install.packages("ggplot2")
+# install.packages("dplyr")
+# install.packages("tidyr")
+# install.packages("wesanderson") #very important
+# install.packages("RColorBrewer")
 ```
 
-```{r setup libraries}
+```{r setup libraries, results="hide"}
 library(bdskytools)
 library(ggplot2)
 library(dplyr)
@@ -42,7 +42,7 @@ library(RColorBrewer)
 
 ```{r Read in a single logfile and plot Ro over time}
 #Read in the logfile
-lf<-readLogfile("BEAST/hcv_bdsky.log", burnin=0.1)
+lf<-readLogfile("BEAST/hcv_bdsky_30M.log", burnin=0.1)
 
 #extract the HPDs 
 Re_sky <- getSkylineSubset(lf, "reproductiveNumber")
@@ -131,12 +131,12 @@ fav2 <- adjustcolor(fav, alpha.f = 0.3)
 png("OutputFigures/Re_plot3.png", width = 5, height = 5, units = "in", res=1000)
 par(mar=c(5,4,4,4)+0.1)
 plotSkylinePretty(times1, Re_gridded_hpd1, type='smooth', axispadding=0.0, 
-                  col=fav[1], fill=fav2[2], alpha=0.5,
+                  col=fav[1], fill=fav2[2], 
                   xlab="Time", ylab=expression("R"[e]), side=2, yline=2.5, xline=2, xgrid=TRUE, 
                   ygrid=TRUE, gridcol=pal.dark(cgray), ylims=c(0,4),xaxis=FALSE)
 
 plotSkylinePretty(times1, Re_gridded_hpd2, type='smooth', axispadding=0.0, 
-                  col=fav[5], fill=fav2[5], alpha=0.5,
+                  col=fav[5], fill=fav2[5], 
                   xlab="Time", ylab=expression("R"[e]), side=2, yline=2.5, xline=2, xgrid=TRUE, 
                   ygrid=TRUE, gridcol=pal.dark(cgray), ylims=c(0,4), new=TRUE, add=TRUE)
 while (!is.null(dev.list()))  dev.off()
@@ -148,7 +148,49 @@ Issue: very annoying/ugly script to have to change object names for each log fil
 Challenge: can you write a function that can be applied to a logfile to define all these objects (with unique names dependent on the input to the function) to feed into the figure?
 
 ```{r CHALLENGE 1: INSERT NEW SCRIPT HERE}
+# define a vector of log file inputs
+my_logfiles<-list("BEAST/hcv1.log","BEAST/hcv2.log")
+#my_logfiles<-as.list(dir("BEAST","log",full.names=T))
+names(my_logfiles)<-c("hcv1","hcv2")
 
+# write a function that operates over a list of logfiles
+lg_to_df <- function(logfile){
+  
+  #Read in the logfile
+  lf<-readLogfile(logfile, burnin=0.1)
+
+  #extract the HPD for reproduction number
+  Re_sky <- getSkylineSubset(lf, "reproductiveNumber")
+  Re_hpd <- getMatrixHPD(Re_sky)
+  
+  #setup for plot
+  timegrid <- seq(0,400,length.out=101)
+  times <- 1993-timegrid #sequences were sampled in 1993
+  Re_gridded <- gridSkyline(Re_sky, lf$origin, timegrid)
+  Re_gridded_hpd <- getMatrixHPD(Re_gridded)
+  
+  # make a list of the desired outputs
+  our_list <- list(Re_gridded_hpd,times)
+}
+
+# Run this function over our list of log files
+# Return a list of the desired outputs
+log_out <- lapply(my_logfiles, lg_to_df)
+
+# Make a plot using the dataframes within the output list
+# Plot over a list
+fav2 <- adjustcolor(fav, alpha.f = 0.3)
+
+png("OutputFigures/Re_plot_improved_list_b.png", width = 5, height = 5, units = "in", res=1000)
+par(mar=c(5,4,4,4)+0.1)
+
+for (i in 1:(length(log_out))){
+  plotSkylinePretty(log_out[[i]][[2]], log_out[[i]][[1]], type='smooth', axispadding=0.0, 
+                    col=fav[i], fill=fav2[i], xlab="Time", ylab=expression
+                    ("R"[e]), side=2, yline=2.5, xline=2, xgrid=TRUE, ygrid=TRUE,
+                    gridcol=pal.dark(cgray), ylims=c(0,4), add=(i>1))
+  }
+while (!is.null(dev.list()))  dev.off()
 ```
 
 If you have time...apply same strategy to improve code below
